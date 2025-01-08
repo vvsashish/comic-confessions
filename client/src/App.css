@@ -1,0 +1,202 @@
+[data-bs-theme="light"] {
+  --fill-color: black;
+}
+[data-bs-theme="dark"] {
+  --fill-color: white;
+}
+#root {
+  background: linear-gradient(
+    -45deg,
+    #4158d0,
+    #e560dc,
+    #ffb374d0,
+    #ef5f5f,
+    #d840b6
+  );
+}
+
+.home-cards {
+  background: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(10px) !important;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-container .card-content {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .card-content .home-cards {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  flex-shrink: 0;
+}
+main {
+  flex-grow: 1;
+  margin-top: 5rem;
+}
+footer {
+  flex-shrink: 0;
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.nav-link.active {
+  background: linear-gradient(45deg, #ff0a78, #5773ff);
+}
+.toast-message {
+  position: fixed;
+  top: 4rem;
+  right: 0.5rem;
+}
+.chat-dialog {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid rgb(204, 204, 204);
+  padding: 10px;
+  background-color: #7e7ed22b;
+}
+
+#logo,
+#logoDark {
+  animation: fill 0.5s ease forwards 5s;
+}
+#logo path:nth-child(1),
+#logoDark path:nth-child(1) {
+  stroke-dasharray: 360px;
+  stroke-dashoffset: 360px;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2),
+#logoDark path:nth-child(2) {
+  stroke-dasharray: 299px;
+  stroke-dashoffset: 299px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3),
+#logoDark path:nth-child(3) {
+  stroke-dasharray: 459px;
+  stroke-dashoffset: 459px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(4),
+#logoDark path:nth-child(4) {
+  stroke-dasharray: 195px;
+  stroke-dashoffset: 195px;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+#logo path:nth-child(5),
+#logoDark path:nth-child(5) {
+  stroke-dasharray: 300px;
+  stroke-dashoffset: 300px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(6),
+#logoDark path:nth-child(6) {
+  stroke-dasharray: 360px;
+  stroke-dashoffset: 360px;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+#logo path:nth-child(7),
+#logoDark path:nth-child(7) {
+  stroke-dasharray: 289px;
+  stroke-dashoffset: 289px;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+#logo path:nth-child(8),
+#logoDark path:nth-child(8) {
+  stroke-dasharray: 297px;
+  stroke-dashoffset: 297px;
+  animation: line-anim 2s ease forwards 2.1s;
+}
+#logo path:nth-child(9),
+#logoDark path:nth-child(9) {
+  stroke-dasharray: 299px;
+  stroke-dashoffset: 299px;
+  animation: line-anim 2s ease forwards 2.4s;
+}
+#logo path:nth-child(10),
+#logoDark path:nth-child(10) {
+  stroke-dasharray: 342px;
+  stroke-dashoffset: 342px;
+  animation: line-anim 2s ease forwards 2.7s;
+}
+#logo path:nth-child(11),
+#logoDark path:nth-child(11) {
+  stroke-dasharray: 363px;
+  stroke-dashoffset: 363px;
+  animation: line-anim 2s ease forwards 3s;
+}
+#logo path:nth-child(12),
+#logoDark path:nth-child(12) {
+  stroke-dasharray: 299px;
+  stroke-dashoffset: 299px;
+  animation: line-anim 2s ease forwards 3.3s;
+}
+#logo path:nth-child(13),
+#logoDark path:nth-child(13) {
+  stroke-dasharray: 195px;
+  stroke-dashoffset: 195px;
+  animation: line-anim 2s ease forwards 3.6s;
+}
+#logo path:nth-child(14),
+#logoDark path:nth-child(14) {
+  stroke-dasharray: 459px;
+  stroke-dashoffset: 459px;
+  animation: line-anim 2s ease forwards 3.9s;
+}
+#logo path:nth-child(15),
+#logoDark path:nth-child(15) {
+  stroke-dasharray: 297px;
+  stroke-dashoffset: 297px;
+  animation: line-anim 2s ease forwards 4.2s;
+}
+#logo path:nth-child(16),
+#logoDark path:nth-child(16) {
+  stroke-dasharray: 362px;
+  stroke-dashoffset: 362px;
+  animation: line-anim 2s ease forwards 4.5s;
+}
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: var(--fill-color);
+  }
+}
+.gradient-text {
+  background: linear-gradient(45deg, #ff0a78, #5773ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 0.25rem;
+}
+.doughnut-chart {
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}

@@ -8,7 +8,7 @@ const Blog = () => {
   useEffect(() => {
     const loadArticles = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_BASE_URL}/api/articles`
+        `https://comic-confessions-backend.vercel.app/api/articles`
       );
       const articlesWithId = response.data.map((article) => ({
         ...article,

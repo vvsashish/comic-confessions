@@ -3,7 +3,7 @@ import { saveChatMessages } from "../controllers/Messages.controller";
 function SetupSocket(httpServer) {
   const io = require("socket.io")(httpServer, {
     cors: {
-      origin: [process.env.REACT_APP_CORS_URL],
+      origin: ["https://comic-confessions-frontend.vercel.app"],
       methods: ["GET", "POST"],
     },
   });

@@ -24,7 +24,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.REACT_APP_CORS_URL,
+    origin: "https://comic-confessions-frontend.vercel.app",
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: ["Content-Type", "Authorization", "authtoken"],
     credentials: true,
